@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <style>
+        .outer{background-color: lightblue; padding: 20px; margin: 20px; grid-template-columns: 1fr 1fr 1fr; 
+            grid-template-rows: repeat(3,1fr); gap: 40px; display: grid;}
+            #a{grid-column: 3/4; grid-row: 2/3;}
+        .item{background-color: salmon; padding: 40px; text-align: center; margin: 20px;}
+    </style>
 </head>
 <body>
-    <svg height="300" width="300" style="border: 1px solid blue;">
-        <line x1="300" y1="0" x2="0" y2="300" stroke="blue" stroke-width="2"/>
-        <line x1="0" y1="0" x2="300" y2="300" stroke="blue" stroke-width="2"/>
-        <rect x="50" y="50" height="200" width="200" stroke="blue" fill="limegreen" rx="5" ry="5"/>
-        <ellipse cx="150" cy="150" rx="100" ry="50" fill="yellow" stroke="blue"/>
-        <circle cx="150" cy="150" r="50" stroke="blue" stroke-width="2" fill="cyan" />
-        <text x="133" y="155" fill="blue" font-size="20" font_family="Verdana">LJU</text>
-    </svg>
+    <div class="outer">
+        <div class="item" id="a">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
 </body>
 </html>

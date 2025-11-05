@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>SVG</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <style>
+        .container{
+            margin-top: 50px;height: 800px;border: 1px solid red;position: relative;
+        }
+        .test{
+            margin-left: 20px; height: 100px; width: 100px; text-align: center; border: 1px solid black;
+        }
+        .test1{background-color: aqua; position: static; left: 50px;}
+        .test2{background-color: rgb(76, 0, 255); position: relative; top: 50px; left: 50px; z-index: 1;}
+        .test3{background-color: rgb(255, 0, 140); position: absolute; top: 0px; z-index: -1;}
+        .test4{background-color: rgb(208, 255, 0); position: fixed; top: 50px; right: 0px;}
+        .test5{background-color: rgb(255, 0, 0); position: sticky; top: 0px;}
+    </style>
 </head>
 <body>
-    <svg height="150" width="300" style="border: 1px solid blue;">
-        <circle cx="150" cy="150" r="140" stroke="blue" stroke-width="2" fill="Red" />
-        <circle cx="150" cy="150" r="110" stroke="blue" stroke-width="2" fill="yellow" />
-        <circle cx="150" cy="150" r="80" stroke="blue" stroke-width="2" fill="pink" />
-        <circle cx="150" cy="150" r="50" stroke="blue" stroke-width="2" fill="cyan" />
-        <circle cx="150" cy="150" r="20" stroke="blue" stroke-width="2" fill="skyblue" />
-    </svg>
-
-    <svg height="300" width="300" style="border: 1px solid blue;">
-        <circle cx="100" cy="110" r="90" stroke="blue" stroke-width="2" fill="orange" />
-        <polygon points="100,10,40,198,190,78,10,78,160,198" fill="white" stroke="black" fill-rule="evenodd" />
-        <text x="85" y="110" fill="black" font-size="20" font_family="Verdana">Sun</text>
-    </svg>
-    
+    <div class="container">
+        <div class="test test1">static</div>
+        <div class="test test2">relative</div>
+        <div class="test test3">absolute</div>
+        <div class="test test4">fixed</div>
+        <div class="test test5">sticky</div>
+    </div>
+    <div class="container"></div>
 </body>
 </html>

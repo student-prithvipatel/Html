@@ -1,38 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <style>
+        .container{display: flex; flex-direction: row; justify-content: space-between; align-items: center;flex-wrap: nowrap; gap: 15px;
+        background-color: lightcoral;padding: 15px;}
+        .item{background-color: steelblue; color: white;padding: 20px; text-align: center;}
+    </style>
 </head>
 <body>
-    <form method="get" action="">
-        <fieldset>
-            <legend>User Details Form</legend>
-            Name : <input type="text" name="uname"><br/><br/>
-            Password : <input type="password" name="pwd"><br/><br/>
-            Address : <input type="text" name="add"><br/><br/>
-
-            Choose Subject of Book: <br/>
-            <input type="radio" name="r1" value="Novel">Novel<br/>
-            <input type="radio" name="r1" value="Story Book" checked>Story Book <br/>
-            <input type="radio" name="r1" value="Comics" checked>Comics<br/><br/>
-            
-            Fovorite Author : <select>
-                <option selected>Novelist</option>
-                <option>Writer</option>
-                <option>Comics Artist</option>
-            </select><br/><br/>
-
-            Comments for the Last Book You Read :<br/>
-         <textarea rows="5" cols="30"></textarea><br/><br/>
-
-         <input type="submit">
-         <input type="reset">
-        </fieldset>
-    </form>
+    <div class="container">
+        <div class="item">Box 1</div>
+        <div class="item">Box 2</div>
+        <div class="item">Box 3</div>
+    </div>
 </body>
 </html>

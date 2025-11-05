@@ -1,69 +1,16 @@
-<html>
-    <body>
-        <form method="get" action="demo7.html">
-            <fieldset>
-                <legend>Login Form</legend>
-
-
-                Username : <input type="text" name="uname" placeholder="Enter Username" required>
-                <br/>
-
-                Password : <input type="password" name="pwd"><br/>
-
-                Email : <input type="email" name="eid" hidden><br/>
-
-                number : <input type="number" min="0" max="50" step="5" readonly><br/>
-
-                tel : <input type="tel" disabled><br/>
-
-                Gender : <input type="radio" name="r1" value="male">Male
-                    <input type="radio" name="r1" value="female" checked>Female <br/>
-
-                City : <input type="checkbox" name="c1" value="Ahmedabad">Ahmedabad
-                     <input type="checkbox" name="c1" value="Gandhinagar">Gandhinagar
-                     <input type="checkbox" name="c1" value="Surat">Surat<br/>
-
-                <label>Date of Joining : </label><input type="date"><br/>
-
-                <label>Color : <input type="color"></label><br/>  
-
-                <input type="file" accept=".pdf,.jpg,.png" multiple> <br/> 
-
-                <input type="search"><br/>
-
-                <input type="range" min="0" max="200" value="100"><br/>
-                
-                <input list="browsers" name="browser"><br/>
-                <datalist id="browsers">
-                    <option value="Chrome"></option>
-                    <option value="FireFox"></option>
-                </datalist><br/>
-
-
-                Address : <textarea rows="15" cols="25"></textarea><br/>
-                Subject : <select>
-                    <option>FSD</option>
-                    <option>Python</option>
-                    <option>DE</option>
-                    <option selected>PS</option>
-                </select><br/>
-
-
-                City : <select>
-                    <option selected disabled hidden>--Select City--</option>
-                    <optgroup label="Gujarat">
-                        <option>Ahm</option>
-                        <option>Ghn</option>
-                    </optgroup>
-                    <optgroup label="Maharashtra">
-                        <option>Mumbai</option>
-                        <option>Puna</option>
-                    </optgroup>
-                </select><br/>
-
-
-                <input type="submit"><input type="reset">
-            </fieldset>
-        </form>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .outer{border: 2px solid navy; padding: 10px; margin: 2px;background-color: lightblue;}
+        .inner{display: block; border: 1px solid orange; padding: 5px; margin: 5px; width: 100px; height: 50px; background-color: pink;}
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">Box 1</div>
+        <div class="inner">Box 2</div>
+        <div class="inner">Box 3</div>
+    </div>
+</body>
 </html>

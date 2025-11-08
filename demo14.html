@@ -1,20 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <style>
+        div{width: 100px;height: 100px;background-color: red;transition-property: background-color,width; transition-duration: 4s,2s;
+        transition-delay: 2s;}
+        div:hover{
+            width: 300px;height: 300px;background-color: violet;
+        }
+    </style>
 </head>
 <body>
-    <svg height="500" width="500" style="border: 1px solid blue;">
-        <rect x="50" y="50" height="250" width="100" stroke="blue" fill="" />
-        <rect x="79" y="300" height="100" width="40" stroke="blue" fill="" />
-        <circle cx="100" cy="95" r="30" stroke="blue" stroke-width="2" fill="red" />
-        <circle cx="100" cy="170" r="30" stroke="blue" stroke-width="2" fill="yellow" />
-        <circle cx="100" cy="245" r="30" stroke="blue" stroke-width="2" fill="green" />
-    </svg>
+    <div></div>
 </body>
 </html>

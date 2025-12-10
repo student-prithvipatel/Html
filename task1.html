@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <form class="was-validated" >
+        <div>
+            <label class="form-label">Username:</label></br>
+            <input type="text" class="form-control" required placeholder="Enter username">
+            <div class="valid-feedback">Good!</div>
+            <div class="invalid-feedback">please enter username</div>
+        </div>
+        <div>
+            <label class="form-label">Mobile number:</label></br>
+            <input type="text" class="form-control" placeholder="Enter password" required>
+            <div class="valid-feedback">Good!</div>
+            <div class="invalid-feedback">Please enter mobile number</div>
+        </div>
+        <label>Experience:</label>
+        <div class="row">
+            <div class="form-check col-sm-6 " >
+                <input type="radio" class="form-check-input ms-auto" name="exp" value="Good" required>
+                <lable class="form-check-label">Good</lable>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback"></div>
+            </div>
+            <div class="form-check col-sm-6 ">
+                <input type="radio" class="form-check-input" name="exp" value="Excellent" required>
+                <lable class="form-check-label">Excellent</lable>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback"></div>
+            </div>
+        </div>
+        <div class="form-check"></div>
+            <input type="checkbox" class="form-check-input" name="con" value="I would like to continue" required>
+            <label class="form-check-label">I would like to continue</label>
+            <div class="valid-feedback"></div>
+            <div class="invalid-feedback">Check this checkbox to continue</div>
+        </div>
+        <div>
+            <label class="form-label">Select Country:</label></br>
+            <select class="form-select" required>
+                <option value="">--Select Country--</option>
+                <option>Gujarat</option>
+                <option>Maharastra</option>
+                <option>Panjab</option>
+            </select>
+        
+            <div class="valid-feedback">State selected</div>
+            <div class="invalid-feedback">Please select a state</div>
+        </div>
+        <div>
+            <label class="form-label">Comments:</label></br>
+            <textarea rows="5" cols="10" class="form-control" required></textarea>
+            <div class="valid-feedback"></div>
+            <div class="invalid-feedback"></div>
+            <input type="submit">
+        </div>
+    </form>
+</body>
+</html>

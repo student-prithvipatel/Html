@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(a,b,...c){
+            console.log(a)
+            console.log(b)
+            console.log(c)
+        }
+        fun(1,2,3,4,5)
+
+        function fun1(...arg){
+            console.log(arg)
+        }
+        fun1(1,2,3,4,5,6)
+
+        let arr=[1,2,3,4]
+        let arr2=[5,6]
+        console.log(...arr)
+        console.log(...arr,...arr2)
+        
+        // default parameter
+        function fun2(a,b=2){
+            console.log(a*b)
+        }
+        fun2(5)
+        fun2(5,4)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

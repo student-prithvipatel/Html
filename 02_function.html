@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        (function(){
+            document.write("Automatic")
+        })()
+
+        function fun(a,b){
+            return a+b
+        }
+        const res=fun(10,20)
+        console.log(res)
+
+        function fun1(a,b){
+            console.log("Hello world")
+            console.log(a+" "+b)
+            document.write("hello..")
+        }
+        
+        function info(f_n,l_n){
+            let res =f_n+" "+l_n
+            return res
+        }
+        function Hello(){
+            let a=info("abc","pqr")
+            console.log(a)
+        }
+
+        let a= function(x,y){
+            return x+y
+        }
+        let res2=a(3,5)
+        console.log(res2)
+        
+    </script>
+</head>
+<body>
+    <input type="button" value="click" onclick="fun1('abc','pqr')">
+</body>
+</html>

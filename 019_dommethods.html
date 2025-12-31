@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- getElementById(id)  -->
+    <!-- <p id="p1">Hello1</p>
+    <p id="p1">Hello</p> 
+    <script>
+        let a=document.getElementById("p1")
+        a.innerHTML="Hi"
+    </script> -->
+
+    <!-- getElementsByClassName(class)  -->
+    <!-- <p class="p1">Hello1</p>
+    <p class="p1">Hello</p>
+    <script>
+        let a=document.getElementsByClassName("p1")
+        a[0].innerHTML="Hi" //or
+        for(let s of a){
+            s.innerHTML="Hello3"
+        } 
+    </script> -->
+
+    <!-- querySelector()  -->
+    <!-- <p>Para1</p>
+    <h1 class="c1">Heading</h1>
+    <p id="p1">Para with id</p>
+    <script>
+        document.querySelector("p").innerHTML="changed"
+        document.querySelector("#p1").innerHTML="changed1"
+        document.querySelector(".c1").innerHTML="changed2"
+    </script> -->
+
+    <!-- querySelectorAll() -->
+    <!-- <h1 class="c1">Heading</h1>
+    <p id="p1">Para with id</p>
+    <script>
+        let a=document.querySelectorAll("#p1,.c1")
+        for(let s of a){
+            s.innerHTML="chaned again"
+        }
+    </script> -->
+
+    <!-- innerHTML  -->
+    <!-- <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML="<b>Hello</b>"
+    </script> -->
+
+    <!-- innerText -->
+    <!-- <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerText="<b>Hello</b>"
+    </script> -->
+
+    <!-- setAttribute() -->
+    <!-- <img src="img1.jpg" id="p1" alt="alt1">
+    <script>
+        document.getElementById("p1").setAttribute("alt","alt2")
+    </script>  -->
+
+    <!-- getAttribute() -->
+    <!-- <p id="p1" title="Demo Text">Hello</p>
+    <script>
+        alert(document.getElementById("p1").getAttribute("title"))
+    </script>  -->
+
+    <!-- remove Attribute() -->
+     <button id="b1" disabled>Click</button>
+     <script>
+        document.getElementById("b1").removeAttribute("disabled")
+     </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(){
+            alert("welcome user")
+            conf1()
+        }
+        function conf1(){
+            let res=prompt("Enter your name here","abc")
+            fun2(res)
+        }
+        function fun2(name){
+            alert("Hello "+name)
+            conf2()
+        }
+        function conf2(){
+            let res=parseInt(prompt("Enter your age here","19"))
+            if(res>18){
+                alert("You are an adult! ")
+            }
+            else{
+                alert("You are a minor! ")
+            }
+            document.write("Goodbye")
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="click" onclick="fun()">
+</body>
+</html>

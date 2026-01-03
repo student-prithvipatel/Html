@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" onsubmit="fun()">
+        <input type="text" oninput="this.value=this.value.toUpperCase()" id="demo">
+        <input type="text" onfocus="this.style.backgroundColor='cyan'">
+        <input type="text" onblur="this.style.backgroundColor='cyan'">
+        <input type="text" onchange="this.value=this.value.toLowerCase()">
+        <input type="submit">
+    </form>
+    <script>
+        function fun(){
+            let a = document.getElementById("demo").value
+            alert("welcome "+a)
+        }
+    </script>
+</body>
+</html>
+
+
+<!-- 
+onfocus => when field gets focus
+on input => immediatly when value changes
+onblur => when field loses focus
+onchange => when value changed and focus is lost 
+onsubmit => on submitting th form 
+-->

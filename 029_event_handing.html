@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Function call without parameter + onmousedown -->
+     <script>
+        function down(){
+            document.getElementById("demo").innerHTML="mouse down"
+        }
+     </script>
+     <p onmousedown="down()" id="demo">Hello</p>
+     </br>
+
+     <!-- Function call without parameter + onmouseup -->
+     <script>
+        function up(x){
+            x.innerHTML="mouse up"
+        }
+     </script>
+     <p onmouseup="up(this)" >test</p>
+     </br>
+
+     <!-- Inline js no fuction onmousedown -->
+     <p onmouseover="this.style.color='red'; this.innerHTML='mouse over'" >test</p>
+     </br>
+
+     <!--  onmouseover + onmountout -->
+    <div onmouseover="mover(this)" onmouseout="mout(this)">
+        mouse event
+    </div>
+    <script>
+        function mover(id){
+            id.innerHTML="Thankyou";
+            id.style.color="red"
+        }
+        function mout(id){
+            id.innerHTML="Good Bye";
+            id.style.color="blue"
+        }
+    </script>
+</body>
+</html>
+<!-- 
+mouse event
+onclick => by clicking
+onmousedown => By pressing button of mouse
+onmouseup => By releasing button of mouse
+onmouseover => By hovering content
+onmountout => By moving out of content 
+-->

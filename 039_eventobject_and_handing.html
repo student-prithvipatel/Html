@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //event.key
+        function fun(e){
+            alert("The key pressed is: "+e.key+" keycode of it is: "+e.keyCode)
+        }
+    </script>
+</head>
+<body onkeydown="fun(event)">
+    <!-- event.target -->
+    <!-- <select onchange="fun(event)">
+        <option value="red">red</option>
+        <option value="blue">blue</option>
+    </select>
+    <script>
+        function fun(e){
+            alert(e.target.value)
+        }
+    </script> -->
+
+
+    <!-- event.type -->
+    <!-- <button onclick="fun(event)">
+        click
+    </button>
+    <script>
+        function fun(e){
+            alert(e.type)
+        }
+    </script> -->  
+    
+    <!-- event.button -->
+    <!-- <div onmousedown="fun(event)" style="width: 50px; height: 50px; border: 1px solid red;"></div>
+    <script>
+        function fun(e){
+            val=e.button
+            switch(val){
+                case 0:alert("left clicked") //mouse left click
+                break
+                case 1:alert("middle clicked") //mouse middle click
+                break
+                case 2:alert("right clicked") //mouse right click
+                break
+            }
+        }
+    </script> -->
+
+
+    <!-- event.preventdefault -->
+     <form onsubmit="fun(event)">
+        <input type="text">
+        <input type="submit">
+     </form>
+     <script>
+        function fun(e){
+            // e.preventDefault()
+        }
+     </script>
+</body>
+</html>
+
+<!-- 
+property:
+event.target => an element which fired the event
+event.type => type of event
+event.key => which key of keyboard clicked
+event.keyCode => unicode of key
+event.preventDefault => prevents default behaviours of form submission(page reload)
+event.button => which button of mouse is clicked
+-->

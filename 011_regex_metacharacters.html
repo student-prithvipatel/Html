@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="f1" onsubmit="fun()">
+        Name: <input type="text" name="t1"><br>
+        Password: <input type="password" name="t2"><br>
+        <!-- Number: <input type="text" name="t3"><br> -->
+        <input type="submit">
+    </form>
+    <script>
+        function fun(){
+            let u1=document.f1.t1.value
+            let u2=document.f1.t2.value
+            let pat1=/^\W/
+
+            if(u1=="" | u2==""){
+                alert("not") 
+            }else{
+                if(pat1.test(u1)){
+                    alert("not use special first")
+                }
+            }
+        }
+    </script>
+</body>
+</html>
+
+<!-- 
+expressions => allowed => notallowed
+[abc] => ab,abc,a12,c@ => pqr,@,123,12@  - any
+[^abc] => ader@,abc@13,bc123,23dt => a,ab,abc,bc,ac  - not
+[0-9] => 12,1a,1@ => a,ab,@,a@  - digit
+[^0-9] => 1a,1@,a2,rdrd => 1,123,45  - nondigit
+[x|y] => xy,xyz,yz,x1 => ab,abc,123,a@  - or
+
+metacharacters :
+/^A/ => A12,A@,A => 12A,123,abc,bdA - start with
+/bo*/ => bo,bat,boom => xyz,oaz - o/more occurance
+/t$/ => cat,bat,eat => tag,eater,still,ab - end with
+/\w/ => Apple,_abc,@abc => @, @! - word character(a-z,A-Z,0-9)
+/\W/ => @,@123,!abc => abc,123,Abc - nonword character(a-z,A-Z,0-9)
+/\d/ => 123,1a,1@ => abc,Abc@ - digit
+/\D/ => 12@,12abc,abc => 123,89 - nondigit
+
+length => {fixedcount},{min, },{min,max}
+login js min8 special char
+-->

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let promice=new Promise((resolve,reject) =>{
+            // let success=false
+            // let success=true
+            // let success=123
+            let success=0
+            setTimeout(() =>{
+                if(success){
+                    resolve("order successfully")
+                }
+                else{
+                    reject("order failed")
+                }
+            },2000)
+        })
+        promice
+        .then(result => console.log(result))
+        .catch(error => console.log(error))
+        .then(() => console.log("finished"))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
